@@ -1,0 +1,292 @@
+/*-----------------------
+    2. SOCIAL LINKS
+-----------------------*/
+label{
+	color:#333;
+}
+
+.checkbox-wrap label, .form-link{
+	color:#333;
+	font-weight:400;
+	font-size:12px;
+}
+.socio-social-links{
+    width:100%;
+}
+
+.socio-social-links > .social-link {
+    width:100%;
+    font-size:14px;
+    font-weight:500;
+    transition: box-shadow 0.1s ease-in-out;margin-bottom:10px;
+}
+.socio-social-links > .social-link:hover {
+    box-shadow:0px 1px 8px 2px #E0E0E0;
+    transform:none;
+}
+.socio-social-links > .social-link > svg {
+    margin-right:4px;
+    width:18px;
+    height:18px;
+    fill:#000;
+}
+.socio-social-links > .social-link > span {
+    color:#333; font-size:12px; font-weight:700;
+}
+
+.socio-social-links > .google{
+    background-color:#fff;
+	box-shadow:rgba(0, 0, 0, 0.2) 1px 1px 5px 0px !important;
+}
+.socio-social-links > .apple{
+    background-color:#fff;
+	box-shadow:rgba(0, 0, 0, 0.2) 1px 1px 5px 0px !important;
+}
+#socio-login > .socio-login-button{
+    background-color:#81C14B;
+    transition: box-shadow 0.1s ease-in-out;
+    box-shadow:none;
+}
+
+.socio-social-links > .google:hover,.socio-social-links > .apple:hover{background:#eee;transition:background 0.1s ease-out 0s;}
+
+#socio-login > .socio-login-button:hover{
+    box-shadow:0px 1px 8px 2px #E0E0E0;
+}
+
+#socio-register > .socio-register-button{
+    background-color:#81C14B;
+    transition: box-shadow 0.1s ease-in-out;
+    color:#fff;
+    box-shadow:none;
+}
+
+#socio-register > .socio-register-button:hover{
+    box-shadow:0px 1px 8px 2px #E0E0E0;
+    color:#fff;
+}
+.socio-posting-criterial > select{
+    color:#add68b;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius:2px;
+    border:1px  solid #3333332e;
+    padding: 2px 6px;
+    font-family:'Poppins', sans-serif,FontAwesome;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    overflow:auto; 
+}
+#login-with-email-input:focus, div.form-input > #login-password-field:focus, #login-with-mobile-input:focus, #register-with-mobile-input:focus, #register-with-email-input:focus{
+    box-shadow:0px 1px 8px -4px #81c14b7a;
+    border-color:#81c14b7a;
+}
+.socio-posting-criterial > select:focus{
+    box-shadow:0px 1px 8px -4px #81c14b7a;
+    border-color:#81c14b7a;
+    border-radius:2px;
+}
+.socio-posting-criterial > select > option{
+    height:100px;
+}
+
+.socio-posting-criterial-no > select{
+    color:#add68b;
+    font-size: 12px;
+    line-height:19px;
+   
+    border:1px  solid #3333332e;
+    padding: 2px 5px;
+    font-family:'Poppins', sans-serif,FontAwesome;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    overflow:auto;
+    width:74px;
+}
+
+.socio-posting-criterial-no > select:focus{
+    box-shadow:0px 1px 8px -4px #81c14b7a;
+    border-color:#81c14b7a;
+    border-radius: 6px 6px 0 0;
+}
+.socio-posting-criterial-no > select > option{
+    height:100px;
+    
+}
+
+.signup-notify{
+    color:#333;
+    font-size:12px;
+    font-weight:300;
+    margin:10px auto;
+    line-height:16px;
+}
+.register-country{
+    margin:30px auto;
+}
+.socio-label{
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    text-transform: capitalize;
+    color: #000!important;
+}
+
+
+
+
+
+
+/* Email-Id Style Navigation  */
+.container-choose, .container-choose-login{
+	width:100%
+}
+
+nav.selection-id, nav.selection-login{
+	width:100%;
+	margin:auto;
+}
+
+
+nav.selection-id ul.section-id,nav.selection-login ul.section-login {
+	margin: auto;
+	width: 70%;
+	/* border: 3px solid #73AD21; */
+	padding: 10px;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 2px;
+    
+}
+
+nav.selection-id ul.section-id li,nav.selection-login ul.section-login li {
+	width:45%;
+    display: inline-block;
+    /* height: 40px; */
+    background-color: #fff!important;
+    color: #81C14B!important;
+    padding:5px 10px;
+    text-decoration: none;
+    text-align: center;
+    font: normal 14px/14px 'Poppins', sans-serif;
+    /* Font: Font-style Font-weight Font-size/line-height Font-family */
+    cursor: pointer;
+    margin-left: -4px;
+    transition: all .3s ease-in-out;
+    border:1px solid #81C14B;
+
+}
+
+nav.selection-id ul.section-id li:first-of-type,nav.selection-login ul.section-login li:first-of-type {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius:2px
+}
+
+nav.selection-id ul.section-id li:last-of-type,nav.selection-login ul.section-login li:last-of-type {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius:2px
+}
+
+nav.selection-id ul.section-id li.inactive,nav.selection-login ul.section-login li.inactive {
+    background-color: #81C14B!important;
+    color: #F2F2F2!important
+}
+
+/* End Email-Id Style Navigation  */
+
+/* start Style tabs  */
+
+.container-choose .tabs,.container-choose-login .tabs{
+	width:100%;
+	margin:auto;
+}
+
+.container-choose .tabs div,.container-choose-login .tabs div {
+    width: 100%;
+    color: #FFF;
+    padding: 4px 0;
+    font-size:1rem;
+    border-radius: 5px;
+    /* margin-left: -5px; */
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.3;
+}
+
+.container-choose section.tabs div h2,.container-choose-login section.tabs div h2 {
+    margin: 0;
+    color: #D3AE7B
+}
+
+.container-choose section.tabs div p,.container-choose-login section.tabs div p {
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 0px;
+    font-family:  'Poppins', sans-serif;
+    line-height: 1.8;
+    text-transform: capitalize;
+    color: #000!important ;margin-bottom:0;
+}
+
+.container-choose section.tabs div span,.container-choose-login section.tabs div span {
+    display: block;
+    font-size: 18px;
+    margin-top: 8px
+}
+
+.container-choose div:not(:first-of-type),.container-choose-login div:not(:first-of-type) {
+    display: none;
+}
+
+
+/* End Style tabs  */
+
+
+.login-field-icon{
+    float: right;
+    margin-right: 12px;
+    margin-top: -24px;
+    position: relative;
+    z-index: 2;
+    color:#80c14ba6;
+  }
+.register-country-label{
+    margin-bottom:6px;
+}
+
+/*==========revised screen===============*/
+
+
+/*==========login/register============*/
+.landing{background-image:none!important; position:inherit;}
+.landing button, .landing input[type=password], .landing input[type=text], .landing select, .landing textarea
+{border-radius:0px; height:24px;}
+.landing input[type=password], .landing input[type=text]{height:32px;}
+
+.landing .button.medium{height:38px; line-height:38px;}
+.landing .logo img{width:40%; margin:10px 0;}
+.landing .landing-form{width:400px;}
+.landing-form .form-box{margin-top:0px !important; top:0 !important; padding:30px; width:400px; border-radius:2px;}
+.landing-form .form-box:first-child{margin-top:0px !important;}
+
+.landing  .form-box .form{margin-top:0;}
+.landing .social-links .social-link{margin-right:0;}
+.landing .lined-text:after, .landing .lined-text:before{display:none;}
+.landing .social-link{border-radius:2px; height:36px;}
+.landing .form-box .form-text, .landing .form-box .social-links, .landing .form-box .lined-text{margin-top:15px;}
+.lined-text{font-size:.775rem; font-weight:400;}
+.landing .landing-info{position:static !important; margin:0 auto !important;}
+.landing-info .tab-switch{margin-top:1% !important; margin-left:0 !important; margin:0 auto !important; width:400px !important;}
+.landing .landing-form{margin:0 auto; position:relative; /*width:400px;*/ right:0;}
+.landing .tab-switch-button{background:#81C14B; line-height:36px; height:auto; font-size:0.88rem; font-weight:400;}
+.landing .tab-switch-button.active{background:#eee;}
+.landing .tab-switch .tab-switch-button:first-child, .landing .tab-switch .tab-switch-button:last-child{border-radius:2px;}
+.form-box .form-box-title{margin-bottom:15px;}
+
+/*==========otp============*/
+.otp, .otp p{text-align:center!important; }
