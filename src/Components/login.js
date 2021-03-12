@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import "../css/raw/styles.css";
 import "../css/raw/indexcustom.css"
+import Email from "./Email";
 
 const Login = ()=>{
 
@@ -89,12 +90,7 @@ const Login = ()=>{
                   </div>
                 </div>
                 <div className="hiddencontlogin" id="tab2-login-content">
-                  <div className="form-input">
-                    <p className="register-country-label">Email Address</p>
-                    <input type="text"  id="login-with-email-input" name="register_email"/>
-                    <span id="email-error" style={{}}> <svg className="icon-facebook" >
-                    <use  xlinkHref="#svg-socio-alert"></use>
-                    </svg>Invalid Email</span> </div>
+                <Email/>
                 </div>
               </section>
             </section>
