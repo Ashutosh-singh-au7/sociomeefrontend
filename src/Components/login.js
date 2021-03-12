@@ -1,8 +1,26 @@
-import React from "react";
+import React,{useState} from "react";
 import "../css/raw/styles.css";
 import "../css/raw/indexcustom.css"
 
 const Login = ()=>{
+
+  const[mobile,setMobile]= useState("");
+  const[password,setPassword] = useState("");
+
+  const onChangeMobile=(e)=>{
+    const mobile = e.target.value;
+    setMobile(mobile);
+  }
+
+  const onChangePassword = (e)=>{
+    const password = e.target.value;
+    setPassword(password);
+  }
+
+  const HandleLogin=(e)=>{
+    e.preventDefault();
+  }
+
     return(
         <div classNameNameName="landing">
             <div classNameName="landing-decoration"></div>
@@ -19,14 +37,14 @@ const Login = ()=>{
     
             <div classNameName="tab-switch"> 
      
-                <p classNameName="tab-switch-button login-register-form-trigger">Login</p>
+                {/* <p classNameName="tab-switch-button login-register-form-trigger">Login</p>
       
       
       
-                    <p classNameName="tab-switch-button login-register-form-trigger">Register</p>
+                    <p classNameName="tab-switch-button login-register-form-trigger">Register</p> */}
             </div>
             </div>
-            <form className="form">
+            <form className="form" onSubmit={HandleLogin} >
         
     
         <div className="form-row"> 
@@ -67,13 +85,13 @@ const Login = ()=>{
                         <option value=""> +43</option>
                       </select>
                     </div>
-                    <input type="text" id="login-with-mobile-input" name="register_mobile"/>
+                    <input type="text" value={mobile} onChange={onChangeMobile} id="login-with-mobile-input" name="register_mobile"/>
                   </div>
                 </div>
                 <div className="hiddencontlogin" id="tab2-login-content">
                   <div className="form-input">
                     <p className="register-country-label">Email Address</p>
-                    <input type="text" id="login-with-email-input" name="register_email"/>
+                    <input type="text"  id="login-with-email-input" name="register_email"/>
                     <span id="email-error" style={{}}> <svg className="icon-facebook" >
                     <use  xlinkHref="#svg-socio-alert"></use>
                     </svg>Invalid Email</span> </div>
@@ -90,7 +108,7 @@ const Login = ()=>{
            
             <div className="form-input">
               <p className="socio-label">Password</p>
-              <input id="login-password-field" type="password" className="form-control socio-login-password" name="login_password" value=""/>
+              <input id="login-password-field" type="password" value={password} onChange={onChangePassword} className="form-control socio-login-password" name="login_password"/>
               <span toggle="#login-password-field" className="fa fa-fw fa-eye-slash login-field-icon toggle-password"></span> </div>
           
           </div>

@@ -1,8 +1,26 @@
-import React from "react";
+import React ,{useState} from "react";
 import "../css/raw/styles.css";
 import "../css/raw/indexcustom.css"
 
-const Register = ()=>{
+const Register = (props)=>{
+  const[mobile,setMobile]= useState("");
+  const[email,setEmail] = useState("");
+
+  const onChangeMobile=(e)=>{
+    const mobile = e.target.value;
+    setMobile(mobile);
+  }
+
+  const onChangeEmail = (e)=>{
+    const email = e.target.value;
+    setEmail(email);
+  }
+
+  // const HandleRegister=(e)=>{
+  //   e.preventDefault();
+  // }
+  
+
     return(
         <div classNameNameName="landing">
         <div classNameName="landing-decoration"></div>
@@ -18,12 +36,12 @@ const Register = ()=>{
 
 
         <div classNameName="tab-switch"> 
- 
+{/*  
             <p classNameName="tab-switch-button login-register-form-trigger">Login</p>
   
   
   
-                <p classNameName="tab-switch-button login-register-form-trigger">Register</p>
+                <p classNameName="tab-switch-button login-register-form-trigger">Register</p> */}
         </div>
         </div>
         <form className="form">
@@ -67,13 +85,13 @@ const Register = ()=>{
                         <option value=""> +43</option>
                       </select>
                     </div>
-                    <input type="text" id="login-with-mobile-input" name="register_mobile"/>
+                    <input type="text" value={mobile} onChange={onChangeMobile} id="login-with-mobile-input" name="register_mobile"/>
                   </div>
                 </div>
                 <div className="hiddencontlogin" id="tab2-login-content">
                   <div className="form-input">
                     <p className="register-country-label">Email Address</p>
-                    <input type="text" id="login-with-email-input" name="register_email"/>
+                    <input type="text" value={email} onChange={onChangeEmail} id="login-with-email-input" name="register_email"/>
                     <span id="email-error" style={{color:"red",width:"50%",margin:"10px auto" ,display:"none"}} > <svg className="icon-facebook" style={{fill:"#000",width:"20px", height:"20px", marginTop:"6px"}}>
                     <use xlinkHref="#svg-socio-alert"></use>
                     </svg>Invalid Email</span> </div>
@@ -129,7 +147,7 @@ const Register = ()=>{
       
           <div className="form-item " id="socio-login"> 
          
-            <button className="button medium secondary socio-login-button">Continue</button>
+            <button className="button medium secondary socio-login-button" onClick={e=>e.preventDefault()}>Continue</button>
         
           </div>
      
